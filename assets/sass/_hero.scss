@@ -1,0 +1,96 @@
+#hero {
+    background-color: #080808;
+    text-align: center;
+    position: relative;
+    height: 1050px;
+    overflow: hidden;
+
+    }
+    .feature-image {
+        width: 100%;
+
+        img{
+            width: 30%;
+        }
+    }
+
+    .our-features {
+        margin-top: 30%;
+        
+        .feature-left {
+            position: absolute;
+            top: 38%;
+            left: -16%;
+            .feature-box {
+                text-align: right;
+                padding: 10px 13%;
+            }
+        }
+        .feature-right {
+            position: absolute;
+            top: 38%;
+            right: -16%;
+            .feature-box {
+                text-align: left;
+                padding: 10px 13%;
+
+                .feature-icon {
+                    left: 0;
+                }
+            }
+        }
+        .feature-box {
+            color: #fff;
+            position: relative;
+            padding: 10px 13%;
+            .feature-icon {
+                position: absolute;
+                top: 7%;
+                right: 0%;
+                height: 70px;
+                width: 70px;
+                line-height: 4.5;
+                background-color: #414141ca;
+                border-radius: 50%;
+                transition: .3s all ease-in-out;
+
+                &:hover{
+                    
+                    transform: scale(1.1);
+                    background-color: #027e54
+                }
+                i {
+                    position: absolute;
+                    top: 28%;
+                    left: 27%;
+                    font-size: 32px;
+                }
+            }
+
+            h5 {
+                font-weight: 800;
+                color: #ccc;
+            }
+            p {
+                word-wrap: break-word;
+                color: #777373;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        #hero {
+            height: 1600px;
+
+            .feature-image {
+                width: 100%;
+                display: block;
+            }
+            .feature-left {
+               top: 72%!important;
+            }
+            .feature-right {
+                top: 48%!important;
+            }
+        } 
+    }

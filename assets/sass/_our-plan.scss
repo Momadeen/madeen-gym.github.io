@@ -1,0 +1,215 @@
+#our-plan {
+  padding-top: 0;
+  .plan-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0;
+    height: 880px;
+    position: relative;
+    z-index: 1;
+
+    .overlay-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background-color: rgba(37, 37, 37, 0.678);
+    }
+    .plan-meta {
+        background-color: rgba(21, 20, 20, 0.81);
+        width: 100%;
+        padding: 50px 0;
+        color: aliceblue;
+        z-index: 2;
+        h6 {
+            color:#8c8c8c;
+        }
+    }
+    .check-box {
+        margin: 40px auto 0;
+        width: 100%;
+        position: relative;
+
+        .monthly, .annualy {
+        position: absolute;
+        top: 20%;
+        color: rgb(190, 190, 190);
+        }
+        .monthly {
+            left: 40%;
+        }
+        .annualy {
+            right: 38%;
+        }
+        .switch {
+            display: inline-block;
+            height: 34px;
+            position: relative;
+            width: 60px;
+          }
+          
+          .switch input {
+            display:none;
+          }
+          
+          .slider {
+            background-color: #696969;
+            bottom: 0;
+            cursor: pointer;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: .4s;
+          }
+          
+          .slider:before {
+            background-color: #fff;
+            bottom: 4px;
+            content: "";
+            height: 26px;
+            left: 4px;
+            position: absolute;
+            transition: .4s;
+            width: 26px;
+          }
+          
+          input:checked + .slider {
+            background-color: #66bb6a;
+          }
+          
+          input:checked + .slider:before {
+            transform: translateX(26px);
+          }
+          
+          .slider.round {
+            border-radius: 34px;
+          }
+          
+          .slider.round:before {
+            border-radius: 50%;
+          }
+    }
+  .our-plan {
+    .plan-box {
+      width: 100%;
+      height: 500px;
+      background-color: #fff;
+      margin: 40px 0;
+      padding: 40px 20px;
+      border-radius: 5px;
+
+      .price-label {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 40px;
+        right: 15px;
+        text-align: center;
+        border-top-right-radius: 3px;
+        background: #ef4368;
+        color: #FFF;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 80px 0 0 80px;
+          border-color: transparent transparent transparent #FFF;
+        }
+
+        span {
+          position: absolute;
+          top: 22%;
+          left: 25%;
+          text-transform: uppercase;
+          transform: rotate(42deg);
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+      .plan-title {
+        h5 {
+          text-transform: uppercase;
+          font-size: 15px!important;
+        }
+      }
+
+      .plan-price {
+        span.sign {
+          position: absolute;
+          top: 17%;
+          left: 36%;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        .price, .price-1, .price-2 {
+          display: block;
+          font-size: 50px;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin: -6px 0;
+        }
+        .time, .time-1 {
+          font-weight: 500;
+          color: #636363;
+          font-size: 14px;
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+      
+      .plan-features {
+        padding: 30px 0;
+        ul {
+          padding-left: 0;
+          li {
+            list-style: none;
+            padding: 5px 0;
+          }
+        } 
+      }
+
+      .plan-action {
+        position: absolute;
+        bottom: 11%;
+        left: 31%;
+        a {
+          padding: 10px 26px;
+          border-radius: 18px;
+          background-color: #444;
+          font-weight: 700;
+          color: #fff;
+          text-decoration: none;
+          transition: .2s all ease-in-out;
+
+          &:hover {
+            background-color: #60ab9c;
+          }
+        }
+      }
+
+    }
+  }
+}
+}
+
+
+@media only screen and (max-width: 992px) {
+  .plan-image {
+    height: 2080px!important;
+  }
+
+  .monthly {
+    left: 34%!important;
+  }
+  .annualy {
+    right: 31%!important;
+  }
+}

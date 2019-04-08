@@ -1,0 +1,161 @@
+
+#header {
+    .fixednav {
+        position: fixed;
+        transition: .4s all ease-in-out;
+        background-color: #FFF;
+
+    }
+    nav {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 150;
+        border-bottom: 1px solid rgba(185, 185, 185, 0.274);
+        padding: 0;
+        transition: .4s all ease-in-out;
+        .navbar-brand {
+            border-right: 1px solid rgba(185, 185, 185, 0.274);
+            height: 100px;
+            padding: 0 30px;
+            font-size: 32px;
+            font-weight: 700;
+            padding: 23px 28px;
+            text-transform: uppercase;
+            color: $main-text-color;
+        }
+        .new-brand {
+            font-size: 40px;
+            color: #2d2d2d;
+            transition: .4s all ease-in-out;
+        }
+        
+        div.collapse {
+            
+            ul {
+                margin: 0 auto;
+                padding: 10px 0;
+                li {
+                    padding: 10px 15px;
+                    a {
+                        color: $main-text-color;
+                        font-size: 18px;
+                        font-weight: 500;
+                        opacity: 0.8;
+                        &:hover {
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slider {
+        .swiper-slide {
+            overflow: hidden;
+            .slider-info {
+                position: absolute;
+                top: 45%;
+                left: 32%;
+                z-index: 999;
+                text-align: center;
+                color: #CCC;
+                width: 38%;
+            }
+            .slider-overlay {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: #0c0c0c;
+                z-index: 99;
+                opacity: 0.6;
+            } 
+            img {
+                width: 117%;
+                height: auto;
+            }
+        }
+    }
+    .quote {
+        height: 450px;
+        .quote-content {
+            .quote {
+                font-style: italic;
+                position: absolute;
+                top: 39%;
+                left: -7%;
+                color: #2d2d2d;
+                font-weight: 700;
+            }
+        }
+        .quote-image {
+            width: 70%;
+            overflow: hidden;
+            img {
+                width: 70%;
+                height: auto;
+                margin: 40px 45px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    nav {
+        background-color: #3b3c3c;
+        border-bottom: 2px solid #CCC;
+        height: 100px;
+        .navbar-toggler {
+        }
+        a {
+            font-size: 25px!important;
+            color: rgb(223, 223, 223);
+            font-weight: 700;
+            letter-spacing: 3px;
+            padding: 30px 0!important;
+            text-transform: uppercase;
+        }   
+        .navbar-brand {
+            position: absolute;
+            left: 40%;
+            border-right: none !important;
+        }
+        div.collapse {
+
+            ul{
+
+                li{
+                    width: 100%;
+                    background-color: #FFF;
+                    transition: .4s all ease-in-out;
+                    color: #0c0c0c;
+                    &:hover {
+                        background-color: rgb(24, 24, 24);
+                    }
+                    a{
+                        &:hover {
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .quote {
+        padding: 20px;
+        height: 350px!important;
+        .quote-image {
+            img {
+                width: 30%!important;
+                height: auto;
+                margin: 80px auto!important;
+            }
+        }
+    }
+    
+}
