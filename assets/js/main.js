@@ -37,8 +37,8 @@ $(document).ready(function(){
   $( '.gallery' ).click( function( e ) {
     e.preventDefault();
     $.swipebox( [
-      { href:'assets/img/gallery-1.jpg', title:'My Caption' }, 
-      { href:'assets/img/gallery-2.jpg', title:'My Second Caption' },
+      { href:'madeen-gym.github.io/assets/img/gallery-1.jpg', title:'My Caption' }, 
+      { href:'madeen-gym.github.io/assets/img/gallery-2.jpg', title:'My Second Caption' },
       { href:'assets/img/gallery-3.jpg', title:'My Second Caption' },
       { href:'assets/img/gallery-4.jpg', title:'My Second Caption' },
       { href:'assets/img/gallery-5.jpg', title:'My Second Caption' },
