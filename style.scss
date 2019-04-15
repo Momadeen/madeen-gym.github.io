@@ -191,3 +191,75 @@ p {
         height: 930px!important;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    #header .quote .quote-image img {
+        margin: 184px auto !important;
+    }
+
+    #hero {
+        height: height: 1706px!important;
+        .feature-image img {
+            width: 70%!important;
+        }
+        .feature-right {
+            top: 48% !important;
+            .feature-box {
+                padding: 2px 7%!important;
+
+                .feature-icon {
+                    top: 1%!important;
+                }
+            }
+        }
+        .feature-left {
+            top: 73% !important;
+            .feature-box {
+                padding: 2px 7%!important;
+
+                .feature-icon {
+                    top: 1%!important;
+                    right: -18%!important;
+                }
+            }
+        }
+    }
+    #gallery .gallery .gallery-box {
+        height: 104px !important;
+    }
+    #our-team {
+        .part-2 {
+            bottom: 21% !important;
+        }
+        .our-channel .video-image img {
+            width: 200% !important;
+        }
+    }
+    #our-plan {
+        .plan-image {
+            height: 1825px !important;
+        }
+        .our-plan .check-box {
+            .monthly {
+                left: 19% !important;
+            }
+            .annualy {
+                right: 9% !important;
+            }
+        }
+        .plan-image .our-plan .plan-box {
+            height: 430px!important;
+            margin: 10px 0!important;
+        } 
+    }
+    #contact-us {
+        .contact {
+            left: 3%!important;
+        }
+        .q-a-section {
+            .q-box {
+                padding-left: 33px!important;
+            }
+        }
+    }
+}
