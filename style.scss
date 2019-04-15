@@ -193,6 +193,12 @@ p {
 }
 
 @media only screen and (max-width: 320px) {
+    #our-team .comp .comp-meta {
+        padding: 0px 0px 23px 23px!important;
+        h5 {
+            font-size: 16px!important;
+        }
+    }
     #header .quote .quote-image img {
         margin: 184px auto !important;
     }
@@ -208,7 +214,8 @@ p {
                 padding: 2px 7%!important;
 
                 .feature-icon {
-                    top: 1%!important;
+                    top: -4% !important;
+                    left: -19%;
                 }
             }
         }
