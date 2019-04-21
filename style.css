@@ -326,7 +326,8 @@ section {
       box-shadow: -4px 7px 19px -6px rgba(0, 0, 0, 0.75); }
   #our-team .our-channel {
     position: relative; }
-#our-team .our-channel .row { width: 100%!important;}
+#our-team .our-channel .row { 
+  width: 100%!important; }
     #our-team .our-channel .video-box {
       padding: 0; }
       #our-team .our-channel .video-box .play-btn-1, #our-team .our-channel .video-box .play-btn-2 {
