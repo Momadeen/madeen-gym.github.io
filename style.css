@@ -71,7 +71,9 @@ section {
     color: #777373; }
 
 #our-team .our-channel {
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%!important;
+}
 
 #our-team .comp {
   max-width: 95%; }
