@@ -66,6 +66,7 @@ p {
 
  section {
      padding: 40px 0;
+     overflow: !important;
      &:first-of-type {
          padding: 0;
      }
@@ -84,7 +85,12 @@ p {
         color: $desc-gery;
     }
  }
-
+ #our-team .our-channel {
+     overflow: hidden;
+ }
+ #our-team .comp {
+    max-width: 95%;
+ }
  #loading {
      position: fixed;
      display: block;
@@ -192,15 +198,21 @@ p {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .comp-image {
+        padding: 0!important;
+    }
     #our-team .comp .comp-meta {
         padding: 0px 0px 23px 23px!important;
         h5 {
             font-size: 16px!important;
         }
     }
-    #header .quote .quote-image img {
-        margin: 184px auto !important;
+    #header .quote .quote-image {
+        margin-left: 130px!important;
+        img {
+            margin: 184px auto !important;
+        }
     }
 
     #hero {
@@ -235,8 +247,14 @@ p {
         height: 104px !important;
     }
     #our-team {
+        .part-1 {
+            h3 {
+                font-size: 32px !important;
+            }
+            
+        }
         .part-2 {
-            bottom: 21% !important;
+            bottom: 28% !important;
         }
         .our-channel .video-image img {
             width: 200% !important;
@@ -268,5 +286,76 @@ p {
                 padding-left: 33px!important;
             }
         }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    #header {
+        .slider-info {
+            h2 {
+                font-size: 35px!important;
+            }
+        }
+        .quote-image {
+            margin: 25px auto!important;
+            text-align: center!important;
+        }
+    }
+    #gallery .gallery .gallery-box {
+        width: 49%!important;
+    }
+    #our-team .our-channel .video-image {
+        width: 122%!important;
+    }
+    #our-team .our-channel .video-meta .part-2 {
+        bottom: 33% !important;
+    }
+    #our-team .our-channel .video-meta .part-1 h3 {
+        font-size: 40px !important;
+    }
+    #our-team .our-stuff {
+        height: 837px !important;
+        .stuff-box {
+            width: 50%!important;
+        }
+    }
+    #our-plan .plan-image .our-plan .plan-box .plan-price span.sign {
+        left: 42%!important;
+        font-size: 30px!important;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    #header .slider .swiper-slide .slider-info {
+        h2 {
+            font-size: 30px !important;
+        }
+    }
+    .quote .quote-image {
+        img {
+            width: 43% !important;
+            margin: 127px auto !important;
+        }
+        text-align: center;
+        margin: 0 auto;
+    }
+    #hero .feature-right {
+        top: 43% !important;
+    }
+    #gallery .gallery .gallery-box {
+        width: 49.5%;
+        height: 202px;
+    }
+    #our-team .our-stuff .stuff-box {
+        width: 50%;
+    }
+    #our-team .our-stuff {
+        height: 816px !important;
+    }
+    #our-plan .plan-image .check-box .monthly {
+        left: 31% !important;
+    }
+    #our-plan .plan-image .check-box .annualy {
+        right: 26% !important;
     }
 }
